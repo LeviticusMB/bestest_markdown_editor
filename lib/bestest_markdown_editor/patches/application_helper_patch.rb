@@ -19,6 +19,7 @@ module BestestMarkdownEditor
                         $.ajax({
                             url:     "#{escape_javascript url_for(url)}",
                             type:    "post",
+                            global:  false,
                             data:    $("##{escape_javascript form}").serialize(),
                             success: function(data) { preview.innerHTML = data; }
                         });
