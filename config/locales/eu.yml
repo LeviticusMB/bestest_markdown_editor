@@ -1,0 +1,28 @@
+"eu":
+  bestest_markdown_editor:
+    # Please don't forget to translate the plugin name. ("Bestest" is "better than the best" in a grammatically incorrect way.)
+    plugin_name: "Bestest Markdown Editor for Redmine"
+
+    table: Table
+    preview: Toggle Preview
+    side_preview: Toggle Side by Side
+    fullscreen: Toggle Fullscreen
+    help: Redmine/Markdown Guide
+
+    # From jsToolBar
+    code: Inline Code
+    deleted: Ezabatuta
+    heading_1: 1 Goiburua
+    heading_2: 2 Goiburua
+    heading_3: 3 Goiburua
+    highlighted_code: Highlighted code
+    image: Irudia
+    italic: Etzana
+    ordered_list: Ordenatutako zerrenda
+    preformatted_text: Aurrez formateatutako testua
+    quote: Aipamena
+    strong: Lodia
+    underline: Azpimarra
+    unordered_list: Ordenatu gabeko zerrenda
+    unquote: Aipamena kendu
+    wiki_link: Wiki orri baterako esteka

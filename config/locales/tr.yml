@@ -1,0 +1,26 @@
+"tr":
+  bestest_markdown_editor:
+    # Please don't forget to translate the plugin name. ("Bestest" is "better than the best" in a grammatically incorrect way.)
+    plugin_name: "Bestest Markdown Editor for Redmine"
+
+    table: Table
+    preview: Toggle Preview
+    side_preview: Toggle Side by Side
+    fullscreen: Toggle Fullscreen
+    help: Redmine/Markdown Guide
+
+    # From jsToolBar
+    code: Satır içi kod
+    deleted: Silinmiş
+    heading_1: Başlık 1
+    heading_2: Başlık 2
+    heading_3: Başlık 3
+    highlighted_code: Highlighted code
+    image: Resim
+    italic: İtalik
+    ordered_list: Sıralı liste
+    preformatted_text: Preformatted text
+    strong: Kalın
+    underline: Altı çizgili
+    unordered_list: Sırasız liste
+    wiki_link: Wiki sayfasına bağlantı

@@ -1,0 +1,28 @@
+"fa":
+  bestest_markdown_editor:
+    # Please don't forget to translate the plugin name. ("Bestest" is "better than the best" in a grammatically incorrect way.)
+    plugin_name: "Bestest Markdown Editor for Redmine"
+
+    table: Table
+    preview: Toggle Preview
+    side_preview: Toggle Side by Side
+    fullscreen: Toggle Fullscreen
+    help: Redmine/Markdown Guide
+
+    # From jsToolBar
+    code: کد درون خطی
+    deleted: برداشته شده
+    heading_1: سربرگ ۱
+    heading_2: سربرگ ۲
+    heading_3: سربرگ ۳
+    highlighted_code: Highlighted code
+    image: عکس
+    italic: کج
+    ordered_list: فهرست با شماره
+    preformatted_text: نوشته قالب بندی شده
+    quote: تو بردن
+    strong: پررنگ
+    underline: زیرخط
+    unordered_list: فهرست بدون شماره
+    unquote: بیرون آوردن
+    wiki_link: پیوند به برگ ویکی

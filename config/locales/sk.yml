@@ -1,0 +1,28 @@
+"sk":
+  bestest_markdown_editor:
+    # Please don't forget to translate the plugin name. ("Bestest" is "better than the best" in a grammatically incorrect way.)
+    plugin_name: "Bestest Markdown Editor for Redmine"
+
+    table: Table
+    preview: Toggle Preview
+    side_preview: Toggle Side by Side
+    fullscreen: Toggle Fullscreen
+    help: Redmine/Markdown Guide
+
+    # From jsToolBar
+    code: Zobrazenie kódu
+    deleted: Preškrtnuté
+    heading_1: Nadpis 1
+    heading_2: Nadpis 2
+    heading_3: Nadpis 3
+    highlighted_code: Highlighted code
+    image: Obrázok
+    italic: Kurzíva
+    ordered_list: Číslovaný zoznam
+    preformatted_text: Predformátovaný text
+    quote: Odsadenie
+    strong: Tučné
+    underline: Podčiarknuté
+    unordered_list: Odrážkový zoznam
+    unquote: Zrušiť odsadenie
+    wiki_link: Odkaz na wikistránku

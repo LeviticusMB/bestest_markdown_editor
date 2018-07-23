@@ -1,0 +1,28 @@
+"nl":
+  bestest_markdown_editor:
+    # Please don't forget to translate the plugin name. ("Bestest" is "better than the best" in a grammatically incorrect way.)
+    plugin_name: "Bestest Markdown Editor for Redmine"
+
+    table: Table
+    preview: Toggle Preview
+    side_preview: Toggle Side by Side
+    fullscreen: Toggle Fullscreen
+    help: Redmine/Markdown Guide
+
+    # From jsToolBar
+    code: Computercode
+    deleted: Verwijderd
+    heading_1: Hoofding 1
+    heading_2: Hoofding 2
+    heading_3: Hoofding 3
+    highlighted_code: Gemarkeerde code
+    image: Afbeelding
+    italic: Cursief
+    ordered_list: Geordende lijst
+    preformatted_text: Vooropgemaakte tekst
+    quote: Citaat
+    strong: Vetgedrukt
+    underline: Onderstreept
+    unordered_list: Ongeordende lijst
+    unquote: Citaat verwijderen
+    wiki_link: Link naar een Wikipagina

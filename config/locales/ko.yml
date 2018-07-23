@@ -1,0 +1,28 @@
+"ko":
+  bestest_markdown_editor:
+    # Please don't forget to translate the plugin name. ("Bestest" is "better than the best" in a grammatically incorrect way.)
+    plugin_name: "Bestest Markdown Editor for Redmine"
+
+    table: Table
+    preview: Toggle Preview
+    side_preview: Toggle Side by Side
+    fullscreen: Toggle Fullscreen
+    help: Redmine/Markdown Guide
+
+    # From jsToolBar
+    code: 코드
+    deleted: 취소선
+    heading_1: 제목 1
+    heading_2: 제목 2
+    heading_3: 제목 3
+    highlighted_code: 색상화한 코드
+    image: 그림
+    italic: 기울임
+    ordered_list: 번호 매기기
+    preformatted_text: 있는 그대로 표현 (Preformatted text)
+    quote: 인용
+    strong: 굵게
+    underline: 밑줄
+    unordered_list: 글머리 기호
+    unquote: 인용 취소
+    wiki_link: Wiki 페이지에 연결

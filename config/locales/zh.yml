@@ -1,0 +1,28 @@
+"zh":
+  bestest_markdown_editor:
+    # Please don't forget to translate the plugin name. ("Bestest" is "better than the best" in a grammatically incorrect way.)
+    plugin_name: "Bestest Markdown Editor for Redmine"
+
+    table: Table
+    preview: Toggle Preview
+    side_preview: Toggle Side by Side
+    fullscreen: Toggle Fullscreen
+    help: Redmine/Markdown Guide
+
+    # From jsToolBar
+    code: 程序代码
+    deleted: 删除线
+    heading_1: 标题 1
+    heading_2: 标题 2
+    heading_3: 标题 3
+    highlighted_code: Highlighted code
+    image: 图片
+    italic: 斜体
+    ordered_list: 排序列表
+    preformatted_text: 格式化文本
+    quote: 引用
+    strong: 粗体
+    underline: 下划线
+    unordered_list: 无序列表
+    unquote: 删除引用
+    wiki_link: 连接到 Wiki 页面

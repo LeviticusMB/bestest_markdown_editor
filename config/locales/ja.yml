@@ -1,0 +1,28 @@
+"ja":
+  bestest_markdown_editor:
+    # Please don't forget to translate the plugin name. ("Bestest" is "better than the best" in a grammatically incorrect way.)
+    plugin_name: "Bestest Markdown Editor for Redmine"
+
+    table: Table
+    preview: Toggle Preview
+    side_preview: Toggle Side by Side
+    fullscreen: Toggle Fullscreen
+    help: Redmine/Markdown Guide
+
+    # From jsToolBar
+    code: コード
+    deleted: 取り消し線
+    heading_1: 見出し 1
+    heading_2: 見出し 2
+    heading_3: 見出し 3
+    highlighted_code: コードハイライト
+    image: 画像
+    italic: 斜体
+    ordered_list: 番号つきリスト
+    preformatted_text: 整形済みテキスト
+    quote: 引用
+    strong: 強調
+    underline: 下線
+    unordered_list: 順不同リスト
+    unquote: 引用解除
+    wiki_link: Wikiページへのリンク

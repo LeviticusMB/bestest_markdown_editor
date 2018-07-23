@@ -1,0 +1,28 @@
+"id":
+  bestest_markdown_editor:
+    # Please don't forget to translate the plugin name. ("Bestest" is "better than the best" in a grammatically incorrect way.)
+    plugin_name: "Bestest Markdown Editor for Redmine"
+
+    table: Table
+    preview: Toggle Preview
+    side_preview: Toggle Side by Side
+    fullscreen: Toggle Fullscreen
+    help: Redmine/Markdown Guide
+
+    # From jsToolBar
+    code: Inline Code
+    deleted: Dihapus
+    heading_1: Judul 1
+    heading_2: Judul 2
+    heading_3: Judul 3
+    highlighted_code: Highlighted code
+    image: Gambar
+    italic: Miring
+    ordered_list: Daftar terurut
+    preformatted_text: Teks terformat
+    quote: Kutipan
+    strong: Tebal
+    underline: Garis bawah
+    unordered_list: Daftar tak terurut
+    unquote: Hapus kutipan
+    wiki_link: Tautkan ke halaman wiki

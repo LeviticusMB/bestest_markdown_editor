@@ -1,0 +1,28 @@
+"sr":
+  bestest_markdown_editor:
+    # Please don't forget to translate the plugin name. ("Bestest" is "better than the best" in a grammatically incorrect way.)
+    plugin_name: "Bestest Markdown Editor for Redmine"
+
+    table: Table
+    preview: Toggle Preview
+    side_preview: Toggle Side by Side
+    fullscreen: Toggle Fullscreen
+    help: Redmine/Markdown Guide
+
+    # From jsToolBar
+    code: Уграђени кôд
+    deleted: Обрисано
+    heading_1: Наслов 1
+    heading_2: Наслов 2
+    heading_3: Наслов 3
+    highlighted_code: Highlighted code
+    image: Слика
+    italic: Курзив
+    ordered_list: Уређена листа
+    preformatted_text: Претходно форматиран текст
+    quote: Под наводницима
+    strong: Подебљано
+    underline: Подвучено
+    unordered_list: Листа набрајања
+    unquote: Уклони наводнике
+    wiki_link: Веза према Wiki страни

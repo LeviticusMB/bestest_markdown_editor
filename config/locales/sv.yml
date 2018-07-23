@@ -1,0 +1,28 @@
+"sv":
+  bestest_markdown_editor:
+    # Please don't forget to translate the plugin name. ("Bestest" is "better than the best" in a grammatically incorrect way.)
+    plugin_name: "Bästaste Markdown-editorn för Redmine"
+
+    table: Tabell
+    preview: Växla förhandsgranskning
+    side_preview: Växla sidyvy
+    fullscreen: Växla fullskärmsläge
+    help: Redmine/Markdown-guide
+
+    # From jsToolBar
+    code: Kod
+    deleted: Genomstruken
+    heading_1: Rubrik 1
+    heading_2: Rubrik 2
+    heading_3: Rubrik 3
+    highlighted_code: Highlighted code
+    image: Bild
+    italic: Kursiv
+    ordered_list: Sorterad lista
+    preformatted_text: Förformaterad text
+    quote: Citat
+    strong: Fet
+    underline: Understruken
+    unordered_list: Osorterad lista
+    unquote: Ta bort citat
+    wiki_link: Länk till en wikisida

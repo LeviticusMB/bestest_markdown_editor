@@ -1,0 +1,28 @@
+"hu":
+  bestest_markdown_editor:
+    # Please don't forget to translate the plugin name. ("Bestest" is "better than the best" in a grammatically incorrect way.)
+    plugin_name: "Bestest Markdown Editor for Redmine"
+
+    table: Table
+    preview: Toggle Preview
+    side_preview: Toggle Side by Side
+    fullscreen: Toggle Fullscreen
+    help: Redmine/Markdown Guide
+
+    # From jsToolBar
+    code: Kód sorok
+    deleted: Törölt
+    heading_1: Fejléc 1
+    heading_2: Fejléc 2
+    heading_3: Fejléc 3
+    highlighted_code: Highlighted code
+    image: Kép
+    italic: Dőlt
+    ordered_list: Számozott lista
+    preformatted_text: Előreformázott szöveg
+    quote: Quote
+    strong: Félkövér
+    underline: Aláhúzott
+    unordered_list: Felsorolás
+    unquote: Remove Quote
+    wiki_link: Link egy Wiki oldalra

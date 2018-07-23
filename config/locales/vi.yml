@@ -1,0 +1,28 @@
+"vi":
+  bestest_markdown_editor:
+    # Please don't forget to translate the plugin name. ("Bestest" is "better than the best" in a grammatically incorrect way.)
+    plugin_name: "Bestest Markdown Editor for Redmine"
+
+    table: Table
+    preview: Toggle Preview
+    side_preview: Toggle Side by Side
+    fullscreen: Toggle Fullscreen
+    help: Redmine/Markdown Guide
+
+    # From jsToolBar
+    code: Mã chung dòng
+    deleted: Xóa
+    heading_1: Tiêu đề 1
+    heading_2: Tiêu đề 2
+    heading_3: Tiêu đề 3
+    highlighted_code: Highlighted code
+    image: Ảnh
+    italic: Nghiêng
+    ordered_list: Danh sách có thứ tự
+    preformatted_text: Mã nguồn
+    quote: Trích dẫn
+    strong: Đậm
+    underline: Gạch chân
+    unordered_list: Danh sách không thứ tự
+    unquote: Bỏ trích dẫn
+    wiki_link: Liên kết đến trang wiki

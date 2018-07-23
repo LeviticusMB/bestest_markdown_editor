@@ -1,0 +1,28 @@
+"mn":
+  bestest_markdown_editor:
+    # Please don't forget to translate the plugin name. ("Bestest" is "better than the best" in a grammatically incorrect way.)
+    plugin_name: "Bestest Markdown Editor for Redmine"
+
+    table: Table
+    preview: Toggle Preview
+    side_preview: Toggle Side by Side
+    fullscreen: Toggle Fullscreen
+    help: Redmine/Markdown Guide
+
+    # From jsToolBar
+    code: Програмын код
+    deleted: Устгагдсан
+    heading_1: Гарчиг 1
+    heading_2: Гарчиг 2
+    heading_3: Гарчиг 3
+    highlighted_code: Highlighted code
+    image: Зураг
+    italic: Налуу
+    ordered_list: Эрэмбэтэй жагсаалт
+    preformatted_text: Өмнө нь хэлбэржсэн текст
+    quote: Ишлэл
+    strong: Бүдүүн
+    underline: Доогуур зураас
+    unordered_list: Эрэмбэгүй жагсаалт
+    unquote: Ишлэлийг устгах
+    wiki_link: Вики хуудас руу холбох
