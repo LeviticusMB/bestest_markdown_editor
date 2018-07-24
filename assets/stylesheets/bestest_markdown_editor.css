@@ -1,12 +1,17 @@
 body.textarea-monospace .CodeMirror-code {
-    font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace
+    font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace;
 }
 
 body.textarea-proportional .CodeMirror-code {
-    font-family: Verdana, sans-serif
+    font-family: Verdana, sans-serif;
 }
 
 .editor-preview p,
 .editor-preview-side p {
-    padding-left: 0
+    padding-left: 0;
+}
+
+.CodeMirror .CodeMirror-code .cm-quote {
+    color     : #7f8c8d;
+    font-style: italic;
 }
