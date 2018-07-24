@@ -25,13 +25,14 @@ bestest_markdown_editor.helper = function(field_id, _locale, helpLink) {
         editor.options.insertTexts.horizontalRule = saved;
     }
 
-    var element  = document.getElementById(field_id),
-        timer    = undefined,
-        last_pre = 0;
-        lang     = bestest_markdown_editor.lang,
-        editor   = bestest_markdown_editor[field_id] = new EasyMDE({
+    var element  = document.getElementById(field_id);
+    var timer    = undefined;
+    var last_pre = 0;
+    var hidden   = true;
+    var lang     = bestest_markdown_editor.lang;
+    var editor   = bestest_markdown_editor[field_id] = new EasyMDE({
             element:        element,
-            autofocus:      true,
+            autofocus:      false,
             indentWithTabs: false,
             tabSize:        4,
             spellChecker:   false, // locale.replace(/-.*/, '') === 'en',
@@ -68,6 +69,19 @@ bestest_markdown_editor.helper = function(field_id, _locale, helpLink) {
         });
 
     editor.codemirror.on('blur', function() { editor.codemirror.save(); });
+
+    setInterval(function() {
+	    var h = editor.codemirror.getWrapperElement().offsetHeight === 0 && editor.codemirror.getWrapperElement().offsetWidth === 0;
+
+	    if (hidden !== h) {
+		if (hidden && !h) {
+		    editor.value(element.value);
+		    editor.codemirror.focus();
+		}
+
+		hidden = h;
+	    }
+	}, 300);
 }
 
 var bestest_markdown_editor_preview = {};
