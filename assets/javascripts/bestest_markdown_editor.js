@@ -26,6 +26,7 @@ bestest_markdown_editor.helper = function(field_id, _locale, helpLink) {
     }
 
     var element  = document.getElementById(field_id);
+    var value    = element.value;
     var timer    = undefined;
     var last_pre = 0;
     var hidden   = true;
@@ -71,17 +72,22 @@ bestest_markdown_editor.helper = function(field_id, _locale, helpLink) {
     editor.codemirror.on('blur', function() { editor.codemirror.save(); });
 
     setInterval(function() {
-	    var h = editor.codemirror.getWrapperElement().offsetHeight === 0 && editor.codemirror.getWrapperElement().offsetWidth === 0;
+            var h = editor.codemirror.getWrapperElement().offsetHeight === 0 && editor.codemirror.getWrapperElement().offsetWidth === 0;
+            var v = element.value;
 
-	    if (hidden !== h) {
-		if (hidden && !h) {
-		    editor.value(element.value);
-		    editor.codemirror.focus();
-		}
+            if (hidden !== h) {
+                if (hidden && !h) {
+                    editor.value(element.value);
+                    editor.codemirror.focus();
+                }
 
-		hidden = h;
-	    }
-	}, 300);
+                hidden = h;
+            }
+            else if (value != v) {
+                editor.value(v);
+                value = v;
+            }
+        }, 300);
 }
 
 var bestest_markdown_editor_preview = {};
