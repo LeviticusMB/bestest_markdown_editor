@@ -66,7 +66,8 @@ bestest_markdown_editor.helper = function(field_id, _locale, helpLink) {
                 { name: "fullscreen",     action: EasyMDE.toggleFullScreen,    className: "fa fa-arrows-alt no-disable no-mobile", title: lang.fullscreen },
                 "|",
                 { name: "guide",          action: helpLink,                    className: "fa fa-question-circle",                 title: lang.help },
-            ]
+            ],
+            autoDownloadFontAwesome: false
         });
 
     editor.codemirror.on('blur', function() { editor.codemirror.save(); });

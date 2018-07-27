@@ -1,3 +1,5 @@
+@import 'font-awesome/css/font-awesome.min.css';
+
 body.textarea-monospace .CodeMirror-code {
     font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace;
 }
