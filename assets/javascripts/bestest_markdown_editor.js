@@ -44,6 +44,7 @@ bestest_markdown_editor.helper = function(field_id, _locale, helpLink) {
                 image: ["![](", ")"],
                 link: ["[[", "]]"],
             },
+            theme: "bestest",
             toolbar: [
                 { name: "bold",           action: EasyMDE.toggleBold,          className: "fa fa-bold",                            title: lang.strong },
                 { name: "italic",         action: EasyMDE.toggleItalic,        className: "fa fa-italic",                          title: lang.italic },
@@ -78,20 +79,20 @@ bestest_markdown_editor.helper = function(field_id, _locale, helpLink) {
     });
 
     setInterval(function() {
-            var h = editor.codemirror.getWrapperElement().offsetHeight === 0 && editor.codemirror.getWrapperElement().offsetWidth === 0;
-            var v = element.value;
+        var h = editor.codemirror.getWrapperElement().offsetHeight === 0 && editor.codemirror.getWrapperElement().offsetWidth === 0;
+        var v = element.value;
 
-            if (hidden !== h) {
-                if (hidden && !h) {
-                    editor.value(element.value);
-                    editor.codemirror.focus();
-                }
+        if (hidden !== h) {
+            if (hidden && !h) {
+                editor.value(element.value);
+                editor.codemirror.focus();
+            }
 
-                hidden = h;
-            }
-            else if (value != v) {
-                editor.value(v);
-                value = v;
-            }
-        }, 300);
+            hidden = h;
+        }
+        else if (value != v) {
+            editor.value(v);
+            value = v;
+        }
+    }, 300);
 }

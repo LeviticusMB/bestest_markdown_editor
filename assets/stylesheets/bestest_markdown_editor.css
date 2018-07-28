@@ -13,7 +13,65 @@ body.textarea-proportional .CodeMirror-code {
     padding-left: 0;
 }
 
-.CodeMirror .CodeMirror-code .cm-quote {
+/* Highlighting theme */
+.cm-s-bestest .cm-string         { color: #D20; background-color: hsla(0,100%,50%,0.05); } /* Lowest prio! */
+.cm-s-bestest .cm-atom           { color: #800; background-color: inherit; font-weight: bold; }
+.cm-s-bestest .cm-attribute      { color: #b48; background-color: inherit; }
+.cm-s-bestest .cm-bracket        { color: #710; background-color: inherit; }
+.cm-s-bestest .cm-builtin        { color: #33D; background-color: inherit; font-weight: bold; }
+.cm-s-bestest .cm-comment        { /* Markdown: code */ }
+.cm-s-bestest .cm-def            { color: #B06; background-color: inherit; }
+.cm-s-bestest .cm-error          { color: #f00; background-color: inherit; }
+.cm-s-bestest .cm-keyword        { /* Markdown: list3 */ }
+.cm-s-bestest .cm-meta           { color: #579; background-color: inherit; }
+.cm-s-bestest .cm-number         { color: #00D; background-color: inherit; }
+.cm-s-bestest .cm-operator       { /* Leave as-is */ }
+.cm-s-bestest .cm-property       { color: #950; background-color: inherit; }
+.cm-s-bestest .cm-punctuation    { /* Leave as-is */ }
+.cm-s-bestest .cm-qualifier      { color: #B06; background-color: inherit; font-weight: bold; }
+.cm-s-bestest .cm-string-2       { color: #E40; background-color: inherit; }
+.cm-s-bestest .cm-tag            { color: #070; background-color: inherit; font-weight: bold; }
+.cm-s-bestest .cm-type           { color: #0a8; background-color: inherit; }
+.cm-s-bestest .cm-variable       { color: #339; background-color: inherit; }
+.cm-s-bestest .cm-variable-2     { /* Markdown: list1 */}
+.cm-s-bestest .cm-variable-3     { /* Markdown: list2 */}
+.cm-s-bestest .cm-variable-3     { color: #00C; background-color: inherit; font-weight: bold; }
+
+/* Markdown theme */
+.cm-s-bestest .cm-header-1 {
+    font-size: 200%;
+    line-height: 200%;
+}
+
+.cm-s-bestest .cm-header-2 {
+    font-size: 160%;
+    line-height: 160%;
+}
+
+.cm-s-bestest .cm-header-3 {
+    font-size: 125%;
+    line-height: 125%;
+}
+
+.cm-s-bestest .cm-header-4 {
+    font-size: 110%;
+    line-height: 110%;
+}
+
+.cm-s-bestest .cm-comment {
+    background: rgba(0, 0, 0, .05);
+    border-radius: 2px;
+}
+
+.cm-s-bestest .cm-link {
+    color: #7f8c8d;
+}
+
+.cm-s-bestest .cm-url {
+    color: #aab2b3;
+}
+
+.cm-s-bestest .cm-quote {
     color     : #7f8c8d;
     font-style: italic;
 }
