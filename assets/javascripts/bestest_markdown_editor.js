@@ -22,7 +22,7 @@ bestest_markdown_editor.helper = function(field_id, _locale, helpLink) {
     function draw_preformatted() { // Hackelihack
         var saved = editor.options.insertTexts.horizontalRule;
 
-        editor.options.insertTexts.horizontalRule = [ '```\n', '\n```'];
+        editor.options.insertTexts.horizontalRule = [ '```', '\n\n```'];
         editor.drawHorizontalRule();
         editor.options.insertTexts.horizontalRule = saved;
     }
