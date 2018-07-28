@@ -72,7 +72,10 @@ bestest_markdown_editor.helper = function(field_id, _locale, helpLink) {
             autoDownloadFontAwesome: false
         });
 
-    editor.codemirror.on('blur', function() { editor.codemirror.save(); });
+    editor.codemirror.on('blur', function() {
+        value = editor.value();
+        editor.codemirror.save();
+    });
 
     setInterval(function() {
             var h = editor.codemirror.getWrapperElement().offsetHeight === 0 && editor.codemirror.getWrapperElement().offsetWidth === 0;
