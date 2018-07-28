@@ -1,14 +1,16 @@
 var bestest_markdown_editor = {};
 
+bestest_markdown_editor.preview = {};
+
 bestest_markdown_editor.helper = function(field_id, _locale, helpLink) {
     function render_preview(plainText, preview) {
         if (!(element.name === 'issue[description]' && element.form.elements['issue[notes]']) &&
-            typeof bestest_markdown_editor_preview[element.form.id] === 'function') {
+            typeof bestest_markdown_editor.preview[element.form.id] === 'function') {
             editor.codemirror.save();
             clearTimeout(timer);
             timer = setTimeout(function() {
                 last_pre = Date.now();
-                bestest_markdown_editor_preview[element.form.id](plainText, preview);
+                bestest_markdown_editor.preview[element.form.id](plainText, preview);
             }, Math.max(1000 - (Date.now() - last_pre), 0));
             return preview.innerHTML;
         }
@@ -90,5 +92,3 @@ bestest_markdown_editor.helper = function(field_id, _locale, helpLink) {
             }
         }, 300);
 }
-
-var bestest_markdown_editor_preview = {};

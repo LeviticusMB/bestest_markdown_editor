@@ -15,7 +15,7 @@ module BestestMarkdownEditor
                 def preview_link_with_js_function(url, form, target='preview', options={})
                     preview_link_without_js_function(url, form, target, options) +
                     javascript_tag(%%
-                        bestest_markdown_editor_preview["#{escape_javascript form}"] = function(plainText, preview) {
+                        bestest_markdown_editor.preview["#{escape_javascript form}"] = function(plainText, preview) {
                         $.ajax({
                             url:     "#{escape_javascript url_for(url)}",
                             type:    "post",
