@@ -73,8 +73,13 @@ bestest_markdown_editor.helper = function(field_id, _locale, helpLink) {
             autoDownloadFontAwesome: false
         });
 
+    var cmSave = editor.codemirror.save;
+    editor.codemirror.save = function save() {
+        cmSave.apply(editor.codemirror);
+        value = element.value;
+    }
+
     editor.codemirror.on('blur', function() {
-        value = editor.value();
         editor.codemirror.save();
     });
 
