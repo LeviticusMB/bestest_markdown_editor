@@ -1,14 +1,16 @@
 var bestest_markdown_editor = {};
 
+bestest_markdown_editor.preview = {};
+
 bestest_markdown_editor.helper = function(field_id, _locale, helpLink) {
     function render_preview(plainText, preview) {
         if (!(element.name === 'issue[description]' && element.form.elements['issue[notes]']) &&
-            typeof bestest_markdown_editor_preview[element.form.id] === 'function') {
+            typeof bestest_markdown_editor.preview[element.form.id] === 'function') {
             editor.codemirror.save();
             clearTimeout(timer);
             timer = setTimeout(function() {
                 last_pre = Date.now();
-                bestest_markdown_editor_preview[element.form.id](plainText, preview);
+                bestest_markdown_editor.preview[element.form.id](plainText, preview);
             }, Math.max(1000 - (Date.now() - last_pre), 0));
             return preview.innerHTML;
         }
@@ -20,7 +22,7 @@ bestest_markdown_editor.helper = function(field_id, _locale, helpLink) {
     function draw_preformatted() { // Hackelihack
         var saved = editor.options.insertTexts.horizontalRule;
 
-        editor.options.insertTexts.horizontalRule = [ '```\n', '\n```'];
+        editor.options.insertTexts.horizontalRule = [ '```', '\n\n```'];
         editor.drawHorizontalRule();
         editor.options.insertTexts.horizontalRule = saved;
     }
@@ -42,6 +44,7 @@ bestest_markdown_editor.helper = function(field_id, _locale, helpLink) {
                 image: ["![](", ")"],
                 link: ["[[", "]]"],
             },
+            theme: "bestest",
             toolbar: [
                 { name: "bold",           action: EasyMDE.toggleBold,          className: "fa fa-bold",                            title: lang.strong },
                 { name: "italic",         action: EasyMDE.toggleItalic,        className: "fa fa-italic",                          title: lang.italic },
@@ -61,33 +64,40 @@ bestest_markdown_editor.helper = function(field_id, _locale, helpLink) {
                 { name: "image",          action: EasyMDE.drawImage,           className: "fa fa-picture-o",                       title: lang.image },
                 { name: "table",          action: EasyMDE.drawTable,           className: "fa fa-table",                           title: lang.table },
                 "|",
-// Buggy :(     { name: "preview",        action: EasyMDE.togglePreview,       className: "fa fa-eye no-disable",                  title: lang.preview },
-                { name: "side-by-side",   action: EasyMDE.toggleSideBySide,    className: "fa fa-columns no-disable no-mobile",    title: lang.side_preview },
-                { name: "fullscreen",     action: EasyMDE.toggleFullScreen,    className: "fa fa-arrows-alt no-disable no-mobile", title: lang.fullscreen },
+                { name: "preview",        action: EasyMDE.togglePreview,       className: "fa fa-eye",        noDisable: true,     title: lang.preview },
+                { name: "side-by-side",   action: EasyMDE.toggleSideBySide,    className: "fa fa-columns",    noDisable: true,     title: lang.side_preview, noMobile: true },
+                { name: "fullscreen",     action: EasyMDE.toggleFullScreen,    className: "fa fa-arrows-alt", noDisable: true,     title: lang.fullscreen,   noMobile: true },
                 "|",
                 { name: "guide",          action: helpLink,                    className: "fa fa-question-circle",                 title: lang.help },
-            ]
+            ],
+            autoDownloadFontAwesome: false
         });
 
-    editor.codemirror.on('blur', function() { editor.codemirror.save(); });
+    var cmSave = editor.codemirror.save;
+    editor.codemirror.save = function save() {
+        cmSave.apply(editor.codemirror);
+        value = element.value;
+    }
+
+    editor.codemirror.on('blur', function() {
+        editor.codemirror.save();
+    });
 
     setInterval(function() {
-            var h = editor.codemirror.getWrapperElement().offsetHeight === 0 && editor.codemirror.getWrapperElement().offsetWidth === 0;
-            var v = element.value;
+        var h = editor.codemirror.getWrapperElement().offsetHeight === 0 && editor.codemirror.getWrapperElement().offsetWidth === 0;
+        var v = element.value;
 
-            if (hidden !== h) {
-                if (hidden && !h) {
-                    editor.value(element.value);
-                    editor.codemirror.focus();
-                }
+        if (hidden !== h) {
+            if (hidden && !h) {
+                editor.value(element.value);
+                editor.codemirror.focus();
+            }
 
-                hidden = h;
-            }
-            else if (value != v) {
-                editor.value(v);
-                value = v;
-            }
-        }, 300);
+            hidden = h;
+        }
+        else if (value != v) {
+            editor.value(v);
+            value = v;
+        }
+    }, 300);
 }
-
-var bestest_markdown_editor_preview = {};
