@@ -28,6 +28,12 @@ git pull
 
 The `master` branch tracks the latest stable release.
 
+### `v1.1` (2018-07-29)
+
+* Support for syntax highlighting in code blocks.
+* Enabled the inline preview button in the toolbar.
+* Bundle Font Awesome so we don't depend on the internets.
+
 ### `v1.0` (2018-07-22)
 
-Initial release branch.
+* Initial release branch.
