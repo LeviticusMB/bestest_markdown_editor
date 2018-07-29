@@ -15,7 +15,7 @@ body.textarea-proportional .CodeMirror-code {
 
 /* Highlighting theme */
 .cm-s-bestest .cm-string         { color: #D20; background-color: hsla(0,100%,50%,0.05); } /* Lowest prio! */
-.cm-s-bestest .cm-atom           { color: #800; background-color: inherit; font-weight: bold; }
+.cm-s-bestest .cm-atom           { color: #088; background-color: inherit; }
 .cm-s-bestest .cm-attribute      { color: #b48; background-color: inherit; }
 .cm-s-bestest .cm-bracket        { color: #710; background-color: inherit; }
 .cm-s-bestest .cm-builtin        { color: #33D; background-color: inherit; font-weight: bold; }
