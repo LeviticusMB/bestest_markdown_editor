@@ -41,37 +41,45 @@ body.textarea-proportional .CodeMirror-code {
 .cm-s-bestest .cm-header-1 {
     font-size: 200%;
     line-height: 200%;
+    background-color: inherit;
 }
 
 .cm-s-bestest .cm-header-2 {
     font-size: 160%;
     line-height: 160%;
+    background-color: inherit;
 }
 
 .cm-s-bestest .cm-header-3 {
     font-size: 125%;
     line-height: 125%;
+    background-color: inherit;
 }
 
 .cm-s-bestest .cm-header-4 {
     font-size: 110%;
     line-height: 110%;
+    background-color: inherit;
 }
 
 .cm-s-bestest .cm-comment {
     background: rgba(0, 0, 0, .05);
     border-radius: 2px;
+    background-color: inherit;
 }
 
 .cm-s-bestest .cm-link {
     color: #7f8c8d;
+    background-color: inherit;
 }
 
 .cm-s-bestest .cm-url {
     color: #aab2b3;
+    background-color: inherit;
 }
 
 .cm-s-bestest .cm-quote {
     color     : #7f8c8d;
     font-style: italic;
+    background-color: inherit;
 }
