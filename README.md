@@ -2,6 +2,8 @@
 
 This plugin supercharges Redmine's Markdown editor using [EasyMDE](https://github.com/Ionaru/easy-markdown-editor/) (a fork of [SimpleMDE](https://github.com/sparksuite/simplemde-markdown-editor)).
 
+For new Redmine instance just configure to use markdown in [Redmine Application Settings](http://www.redmine.org/projects/redmine/wiki/RedmineSettings#Text-formatting).
+
 Not yet using Markdown in Redmine? You should [migrate](https://github.com/Ecodev/redmine_convert_textile_to_markown), because you *need* this plugin. Just look at the screenshot below!
 
 ![Bestest Markdown Editor screenshot](README.1.png)
