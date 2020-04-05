@@ -14,7 +14,7 @@ module BestestMarkdownEditor
             end
 
             module InstanceMethods
-                def wikitoolbar_for_with_bestest_markdown_editor(field_id)
+                def wikitoolbar_for_with_bestest_markdown_editor(field_id, preview_url = preview_text_path)
                     heads_for_wiki_formatter
                     url = "#{Redmine::Utils.relative_url_root}/help/#{current_language.to_s.downcase}/wiki_syntax_markdown.html"
                     javascript_tag("bestest_markdown_editor.helper('#{field_id}', '#{current_language.to_s}', '#{escape_javascript url}');")
