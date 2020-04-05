@@ -7,8 +7,9 @@ module BestestMarkdownEditor
                 base.send(:include, InstanceMethods)
                 base.class_eval do
                     unloadable
-                    alias_method_chain :wikitoolbar_for, :bestest_markdown_editor
-                    alias_method_chain :heads_for_wiki_formatter, :bestest_markdown_editor
+                    alias_method :wikitoolbar_for, :wikitoolbar_for_with_bestest_markdown_editor
+
+                    alias_method :heads_for_wiki_formatter, :heads_for_wiki_formatter_with_bestest_markdown_editor
                 end
             end
 
