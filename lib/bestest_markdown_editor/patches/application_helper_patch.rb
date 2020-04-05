@@ -7,7 +7,7 @@ module BestestMarkdownEditor
                 base.send(:include, InstanceMethods)
                 base.class_eval do
                     unloadable
-                    alias_method_chain :preview_link, :js_function
+                    alias_method :preview_link, :preview_link_with_js_function
                 end
             end
 

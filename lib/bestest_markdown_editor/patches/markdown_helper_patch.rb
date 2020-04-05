@@ -7,13 +7,14 @@ module BestestMarkdownEditor
                 base.send(:include, InstanceMethods)
                 base.class_eval do
                     unloadable
-                    alias_method_chain :wikitoolbar_for, :bestest_markdown_editor
-                    alias_method_chain :heads_for_wiki_formatter, :bestest_markdown_editor
+                    alias_method :wikitoolbar_for, :wikitoolbar_for_with_bestest_markdown_editor
+
+                    alias_method :heads_for_wiki_formatter, :heads_for_wiki_formatter_with_bestest_markdown_editor
                 end
             end
 
             module InstanceMethods
-                def wikitoolbar_for_with_bestest_markdown_editor(field_id)
+                def wikitoolbar_for_with_bestest_markdown_editor(field_id, preview_url = preview_text_path)
                     heads_for_wiki_formatter
                     url = "#{Redmine::Utils.relative_url_root}/help/#{current_language.to_s.downcase}/wiki_syntax_markdown.html"
                     javascript_tag("bestest_markdown_editor.helper('#{field_id}', '#{current_language.to_s}', '#{escape_javascript url}');")
